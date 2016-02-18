@@ -3,15 +3,15 @@
     "type": "library",
     "description": ":package_description",
     "keywords": [
-        "https://github.com/pepsi08/converter.git",
+        "converter",
         "converter"
     ],
     "homepage": "https://github.com/pepsi08/converter.git",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
+            "name": "Nik",
+            "email": "pepsi_08@list.ru",
             "homepage": "https://github.com/pepsi08/converter.git",
             "role": "Developer"
         }
