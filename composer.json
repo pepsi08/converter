@@ -6,7 +6,7 @@
         ":vendor",
         ":package_name"
     ],
-    "homepage": "https://github.com/:vendor/:package_name",
+    "homepage": "https://github.com/pepsi08/converter.git",
     "license": "MIT",
     "authors": [
         {
