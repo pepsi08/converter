@@ -3,8 +3,8 @@
     "type": "library",
     "description": ":package_description",
     "keywords": [
-        ":vendor",
-        ":package_name"
+        "https://github.com/pepsi08/converter.git",
+        "converter"
     ],
     "homepage": "https://github.com/pepsi08/converter.git",
     "license": "MIT",
@@ -12,7 +12,7 @@
         {
             "name": ":author_name",
             "email": ":author_email",
-            "homepage": ":author_website",
+            "homepage": "https://github.com/pepsi08/converter.git",
             "role": "Developer"
         }
     ],
