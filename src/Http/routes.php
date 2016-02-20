@@ -25,15 +25,16 @@
 
 Route::group(['middleware' => ['web']], function () {
 
-    Route::post('/converter', [
-        'as' => 'converter',
-        'uses' => 'ivanchenko\converter\http\controllers\CurrencyController@index'
-    ]);
-
     Route::get('/', 'ivanchenko\converter\http\controllers\CurrencyController@index');
 
     Route::post('/validate/currency', [
         'as' => 'validate-currency',
         'uses' => 'ivanchenko\converter\http\controllers\CurrencyController@validateCurrency'
     ]);
+
+    Route::post('/converter', [
+        'as' => 'converter',
+        'uses' => 'ivanchenko\converter\http\controllers\CurrencyController@index'
+    ]);
+
 });

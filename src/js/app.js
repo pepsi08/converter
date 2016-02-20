@@ -7,9 +7,7 @@ $(document).ready(function () {
     $('[name=target_currency_val]').val($('#target-currency option:selected').text());
     $('[name=target_currency_amount]').val($('#target-currency option:selected').val());
 
-    /**
-     * Change event
-     */
+    //Change event
     $('[name=source_currency]').change(function () {
         $('[name=source_currency_val]').val($("option:selected", this).text());
         $('[name=source_currency_amount]').val($(this).val());
@@ -50,6 +48,5 @@ $(document).ready(function () {
         });
         return result;
     });
-
 
 });

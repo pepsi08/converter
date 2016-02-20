@@ -26,5 +26,4 @@ class CurrencyRequest extends FormRequest {
     {
         return true;
     }
-
 }

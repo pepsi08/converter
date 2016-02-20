@@ -8,7 +8,7 @@ class CurrencyRequest extends FormRequest {
     public function rules()
     {
         return [
-            'amount' => 'required|numeric|min:0',
+            'amount' => ['required', 'regex:/^[1-9]+(?:\.\d+)?$/'],
             'target_currency' => 'equal_currency',
         ];
     }
@@ -17,7 +17,7 @@ class CurrencyRequest extends FormRequest {
     {
         return [
             'amount.required' => 'You need to input some amount of money',
-            'amount.numeric' => 'Amount has to be a number with separated by "." if needed',
+            'amount.regex' => 'Amount has to be a number not less than 1 separated by "." if needed',
             'target_currency.equal_currency' => 'Currencies have to different to convert money',
         ];
     }
