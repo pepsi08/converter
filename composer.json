@@ -1,7 +1,7 @@
 {
     "name": "converter/test",
     "type": "library",
-    "description": ":package_description",
+    "description": "Currency converter.",
     "keywords": ["converter", "currency"],
     "homepage": "https://github.com/pepsi08/converter.git",
     "license": "MIT",
