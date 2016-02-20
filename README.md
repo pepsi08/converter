@@ -23,9 +23,10 @@ Via Composer
 
 2. config app.php
 
-	Add to 'providers' => [...
+	Add to 'providers' => [
+
 	  Ivanchenko\Converter\ConverterServiceProvider::class,
-        Collective\Html\HtmlServiceProvider::class,
+      Collective\Html\HtmlServiceProvider::class,
 
     Add to 'aliases' => [
 
@@ -34,7 +35,7 @@ Via Composer
 
 3. app\Http\routes.php
 
-	comment Route::get('/'... and routes which overrides if you have the same
+	comment Route::get('/' ... and routes which overrides if you have the same
 
 	Route::post('/converter'....
 
