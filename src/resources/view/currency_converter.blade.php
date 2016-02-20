@@ -8,7 +8,7 @@
     <script src="{{url('vendor/converter/app.js')}}" type="text/javascript"></script>
 
 </head>
-<body>      
+<body>
 <div class="container">
     <div class="content">
 
