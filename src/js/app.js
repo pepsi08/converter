@@ -37,9 +37,14 @@ $(document).ready(function () {
 
                 if (typeof errors.amount != 'undefined') {
                     $('.error-amount').html(errors.amount[0]);
+                } else {
+                    $('.error-amount').html('');
                 }
+
                 if (typeof errors.target_currency != 'undefined') {
                     $('.error-currency').html(errors.target_currency[0]);
+                } else {
+                    $('.error-currency').html('');
                 }
             }
         });

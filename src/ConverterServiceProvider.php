@@ -16,7 +16,12 @@ class ConverterServiceProvider extends ServiceProvider
     public function boot(DispatcherContract $events)
     {
         parent::boot($events);
-        Validator::extend('equal_currency', function ($attribute, $value, $parameters, $validator) {
+        Validator::extend('equal_currency', function (
+            $attribute,
+            $value,
+            $parameters,
+            $validator
+        ) {
             return $value != $validator->getData()['source_currency'];
         });
 
@@ -28,8 +33,8 @@ class ConverterServiceProvider extends ServiceProvider
 
         $this->publishes([
             __DIR__ . '/js' => public_path('vendor/converter'),
+            __DIR__ . '/css' => public_path('vendor/converter'),
         ], 'public');
-
     }
 
     /**
@@ -42,8 +47,7 @@ class ConverterServiceProvider extends ServiceProvider
         if (!$this->app->routesAreCached()) {
             require __DIR__ . '/Http/routes.php';
         }
-//        include __DIR__.'/Http/routes.php';
         $this->app->make('Ivanchenko\Converter\Http\Controllers\CurrencyController');
     }
-
 }
+

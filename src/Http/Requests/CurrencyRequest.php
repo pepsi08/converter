@@ -1,5 +1,5 @@
 <?php
-namespace App\Http\Requests;
+namespace Ivanchenko\Converter\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
@@ -8,7 +8,7 @@ class CurrencyRequest extends FormRequest {
     public function rules()
     {
         return [
-            'amount' => 'required|numeric',
+            'amount' => 'required|numeric|min:0',
             'target_currency' => 'equal_currency',
         ];
     }

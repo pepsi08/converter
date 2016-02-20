@@ -4,8 +4,7 @@ namespace Ivanchenko\Converter\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Ivanchenco\Converter\Http\Requests\CurrencyRequest;
-
+use Ivanchenko\Converter\Http\Requests\CurrencyRequest;
 
 class CurrencyController extends Controller
 {
